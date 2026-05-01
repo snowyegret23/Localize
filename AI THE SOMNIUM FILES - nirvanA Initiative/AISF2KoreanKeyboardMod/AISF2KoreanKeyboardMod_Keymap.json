@@ -1,0 +1,98 @@
+{
+  "_notice": "제한 키보드(일부 키만 나오는 상황) 전용 매핑. 키는 원본 토큰(a-z), 값은 출력할 자모 1글자.",
+  "_priority": "limitedLayoutsByScene > limitedLayoutsBySignature",
+  "_r14_notice": "Search 씬의 R14 제한 키보드는 레이아웃이 3종이므로 scene이 아니라 signature 기준으로 나눠야 함.",
+  "limitedLayoutsByScene": {},
+  "limitedLayoutsBySignature": {
+    "acefilmnorsty": {
+      "a": "ㅁ",
+      "c": "ㅍ",
+      "e": "ㄹ",
+      "f": "ㅣ",
+      "i": "ㅡ",
+      "l": "ㅅ",
+      "m": "ㅇ",
+      "n": "ㅋ",
+      "o": "ㅗ",
+      "r": "ㅂ",
+      "s": "ㅊ",
+      "t": "ㄴ",
+      "y": "ㅔ"
+    },
+    "abcfghioprtu": {
+      "a": "ㅊ",
+      "b": "ㅁ",
+      "c": "ㅋ",
+      "f": "ㅡ",
+      "g": "ㅍ",
+      "h": "ㄹ",
+      "i": "ㅂ",
+      "o": "ㅜ",
+      "p": "ㅅ",
+      "r": "ㄴ",
+      "t": "ㅏ",
+      "u": "ㅓ"
+    },
+    "abefiklmnorsu": {
+      "a": "ㅅ",
+      "b": "ㅋ",
+      "e": "ㅂ",
+      "f": "ㅡ",
+      "i": "ㅣ",
+      "k": "ㄹ",
+      "l": "ㅁ",
+      "m": "ㅊ",
+      "n": "ㅓ",
+      "o": "ㄴ",
+      "r": "ㅍ",
+      "s": "ㅇ",
+      "u": "ㅏ"
+    }
+  },
+  "_shiftNav_notice": "쉬프트 키의 패드 내비게이션 설정. 키 이름은 signature('full'은 전체 키보드). 값은 자모(ㅂ,ㅏ등), 'space', 'backspace', 'enter', 'none'.",
+  "shiftNavigationProfiles": {
+    "full": {
+      "up": "ㅔ",
+      "down": "none",
+      "left": "space",
+      "right": "enter"
+    },
+    "acefilmnorsty": {
+      "up": "ㅡ",
+      "down": "none",
+      "left": "ㅔ",
+      "right": "enter"
+    },
+    "abcfghioprtu": {
+      "up": "ㅜ",
+      "down": "none",
+      "left": "ㅏ",
+      "right": "enter"
+    },
+    "abefiklmnorsu": {
+      "up": "ㅣ",
+      "down": "none",
+      "left": "ㅏ",
+      "right": "enter"
+    }
+  },
+  "_disabled_notice": "특정 signature 키보드에서 비활성화할 키 목록. 원본 토큰(a-z, 0-9)과 특수 토큰 'shift'를 받을 수 있음.",
+  "disabledKeysBySignature": {
+    "abcfghioprtu": ["u"],
+    "1234567890": ["shift"]
+  },
+  "_answerAlias_notice": "정답 alias. 키는 대표 정답, 값은 허용 alias 목록.",
+  "AnswerAliases": {
+    "프리메이슨": [
+      "프리",
+      "메이슨",
+      "프리메이슨메"
+    ],
+    "나": [
+      "나를"
+    ],
+    "도와줘": [
+      "구해줘"
+    ]
+  }
+}
