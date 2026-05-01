@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{6575A5A8-888F-43F7-9F80-103DAD8FFA24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VSRKRFont</RootNamespace>
+    <AssemblyName>VSRKRFont</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="FontPlugin.cs" />
+    <Compile Include="GlyphLoadData.cs" />
+    <Compile Include="GlyphSprite_Character_Patch.cs" />
+    <Compile Include="Image_SetSprite_Patch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpriteRenderer_SetSprite_Patch.cs" />
+    <Compile Include="SpriteReplacer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" />
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="BepInEx" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.AnimationModule" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.ImageConversionModule" />
+    <Reference Include="UnityEngine.UI" />
+  </ItemGroup>
+</Project>
